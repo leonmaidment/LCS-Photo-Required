@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "LCS Site Visit",
+    "slug": "lcs-site-visit",
+    "scheme": "lcsvisit",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0B2545"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "uk.co.lcsprojectsolutions.sitevisit",
+      "infoPlist": {
+        "NSCameraUsageDescription": "LCS Site Visit needs the camera to capture site photos during a visit.",
+        "NSMicrophoneUsageDescription": "LCS Site Visit records audio notes for site visits.",
+        "NSPhotoLibraryUsageDescription": "LCS Site Visit can attach photos from your library to a site visit."
+      }
+    },
+    "android": {
+      "package": "uk.co.lcsprojectsolutions.sitevisit",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0B2545"
+      },
+      "permissions": ["CAMERA", "RECORD_AUDIO"]
+    },
+    "plugins": [
+      "expo-camera",
+      "expo-av",
+      "expo-image-picker"
+    ],
+    "extra": {
+      "apiBaseUrl": "http://localhost:4000"
+    }
+  }
+}
